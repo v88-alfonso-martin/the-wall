@@ -1,0 +1,30 @@
+.button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.box_container {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+.textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  border: 1px solid #dce6ff;
+  background-color: #f5f8ff;
+  border-radius: 6px;
+}
+@font-face {
+  font-family: Poppins;
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+* {
+  font-family: Poppins;
+}
+body {
+  background-color: #fbfbfb;
+}

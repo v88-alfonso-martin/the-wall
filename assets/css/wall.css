@@ -1,0 +1,372 @@
+.button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.box_container {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+.textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  border: 1px solid #dce6ff;
+  background-color: #f5f8ff;
+  border-radius: 6px;
+}
+header {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 78px;
+  height: 121px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  margin-left: 16px;
+  color: #152c61;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container main {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  margin: 50px 78px;
+  min-height: 1035px;
+  padding: 58px 68px;
+}
+.container main .main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.container main .main_header #messages_length {
+  color: #2c6bff;
+  font-weight: bold;
+}
+.container main .main_header #create_message_button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+.container main .post_comment_container,
+.container main .comments_container,
+.container main .message_container {
+  box-sizing: border-box;
+  border: 1px solid #dce6ff;
+  border-radius: 6px;
+  min-height: 144px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+.container main .post_comment_container .edit_comment_form textarea,
+.container main .comments_container .edit_comment_form textarea,
+.container main .message_container .edit_comment_form textarea,
+.container main .post_comment_container .post_comment_form textarea,
+.container main .comments_container .post_comment_form textarea,
+.container main .message_container .post_comment_form textarea,
+.container main .post_comment_container .edit_message_form textarea,
+.container main .comments_container .edit_message_form textarea,
+.container main .message_container .edit_message_form textarea {
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.container main .post_comment_container .edit_comment_form textarea:disabled,
+.container main .comments_container .edit_comment_form textarea:disabled,
+.container main .message_container .edit_comment_form textarea:disabled,
+.container main .post_comment_container .post_comment_form textarea:disabled,
+.container main .comments_container .post_comment_form textarea:disabled,
+.container main .message_container .post_comment_form textarea:disabled,
+.container main .post_comment_container .edit_message_form textarea:disabled,
+.container main .comments_container .edit_message_form textarea:disabled,
+.container main .message_container .edit_message_form textarea:disabled {
+  color: #152c61;
+}
+.container main .post_comment_container .edit_comment_form .textarea_edit,
+.container main .comments_container .edit_comment_form .textarea_edit,
+.container main .message_container .edit_comment_form .textarea_edit,
+.container main .post_comment_container .post_comment_form .textarea_edit,
+.container main .comments_container .post_comment_form .textarea_edit,
+.container main .message_container .post_comment_form .textarea_edit,
+.container main .post_comment_container .edit_message_form .textarea_edit,
+.container main .comments_container .edit_message_form .textarea_edit,
+.container main .message_container .edit_message_form .textarea_edit {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  border: 1px solid #dce6ff;
+  background-color: #f5f8ff;
+  border-radius: 6px;
+  height: 84px;
+}
+.container main .post_comment_container .edit_comment_form .actions_container,
+.container main .comments_container .edit_comment_form .actions_container,
+.container main .message_container .edit_comment_form .actions_container,
+.container main .post_comment_container .post_comment_form .actions_container,
+.container main .comments_container .post_comment_form .actions_container,
+.container main .message_container .post_comment_form .actions_container,
+.container main .post_comment_container .edit_message_form .actions_container,
+.container main .comments_container .edit_message_form .actions_container,
+.container main .message_container .edit_message_form .actions_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .message_actions,
+.container main .comments_container .edit_comment_form .actions_container .message_actions,
+.container main .message_container .edit_comment_form .actions_container .message_actions,
+.container main .post_comment_container .post_comment_form .actions_container .message_actions,
+.container main .comments_container .post_comment_form .actions_container .message_actions,
+.container main .message_container .post_comment_form .actions_container .message_actions,
+.container main .post_comment_container .edit_message_form .actions_container .message_actions,
+.container main .comments_container .edit_message_form .actions_container .message_actions,
+.container main .message_container .edit_message_form .actions_container .message_actions {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .message_actions li,
+.container main .comments_container .edit_comment_form .actions_container .message_actions li,
+.container main .message_container .edit_comment_form .actions_container .message_actions li,
+.container main .post_comment_container .post_comment_form .actions_container .message_actions li,
+.container main .comments_container .post_comment_form .actions_container .message_actions li,
+.container main .message_container .post_comment_form .actions_container .message_actions li,
+.container main .post_comment_container .edit_message_form .actions_container .message_actions li,
+.container main .comments_container .edit_message_form .actions_container .message_actions li,
+.container main .message_container .edit_message_form .actions_container .message_actions li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .message_actions .clicked,
+.container main .comments_container .edit_comment_form .actions_container .message_actions .clicked,
+.container main .message_container .edit_comment_form .actions_container .message_actions .clicked,
+.container main .post_comment_container .post_comment_form .actions_container .message_actions .clicked,
+.container main .comments_container .post_comment_form .actions_container .message_actions .clicked,
+.container main .message_container .post_comment_form .actions_container .message_actions .clicked,
+.container main .post_comment_container .edit_message_form .actions_container .message_actions .clicked,
+.container main .comments_container .edit_message_form .actions_container .message_actions .clicked,
+.container main .message_container .edit_message_form .actions_container .message_actions .clicked {
+  color: #2c6bff;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .hide_message_actions,
+.container main .comments_container .edit_comment_form .actions_container .hide_message_actions,
+.container main .message_container .edit_comment_form .actions_container .hide_message_actions,
+.container main .post_comment_container .post_comment_form .actions_container .hide_message_actions,
+.container main .comments_container .post_comment_form .actions_container .hide_message_actions,
+.container main .message_container .post_comment_form .actions_container .hide_message_actions,
+.container main .post_comment_container .edit_message_form .actions_container .hide_message_actions,
+.container main .comments_container .edit_message_form .actions_container .hide_message_actions,
+.container main .message_container .edit_message_form .actions_container .hide_message_actions {
+  visibility: hidden;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .buttons_container,
+.container main .comments_container .edit_comment_form .actions_container .buttons_container,
+.container main .message_container .edit_comment_form .actions_container .buttons_container,
+.container main .post_comment_container .post_comment_form .actions_container .buttons_container,
+.container main .comments_container .post_comment_form .actions_container .buttons_container,
+.container main .message_container .post_comment_form .actions_container .buttons_container,
+.container main .post_comment_container .edit_message_form .actions_container .buttons_container,
+.container main .comments_container .edit_message_form .actions_container .buttons_container,
+.container main .message_container .edit_message_form .actions_container .buttons_container {
+  text-align: right;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .buttons_container .cancel_button,
+.container main .comments_container .edit_comment_form .actions_container .buttons_container .cancel_button,
+.container main .message_container .edit_comment_form .actions_container .buttons_container .cancel_button,
+.container main .post_comment_container .post_comment_form .actions_container .buttons_container .cancel_button,
+.container main .comments_container .post_comment_form .actions_container .buttons_container .cancel_button,
+.container main .message_container .post_comment_form .actions_container .buttons_container .cancel_button,
+.container main .post_comment_container .edit_message_form .actions_container .buttons_container .cancel_button,
+.container main .comments_container .edit_message_form .actions_container .buttons_container .cancel_button,
+.container main .message_container .edit_message_form .actions_container .buttons_container .cancel_button {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  margin-right: 24px;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .buttons_container .success_button,
+.container main .comments_container .edit_comment_form .actions_container .buttons_container .success_button,
+.container main .message_container .edit_comment_form .actions_container .buttons_container .success_button,
+.container main .post_comment_container .post_comment_form .actions_container .buttons_container .success_button,
+.container main .comments_container .post_comment_form .actions_container .buttons_container .success_button,
+.container main .message_container .post_comment_form .actions_container .buttons_container .success_button,
+.container main .post_comment_container .edit_message_form .actions_container .buttons_container .success_button,
+.container main .comments_container .edit_message_form .actions_container .buttons_container .success_button,
+.container main .message_container .edit_message_form .actions_container .buttons_container .success_button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .hide_buttons_container,
+.container main .comments_container .edit_comment_form .actions_container .hide_buttons_container,
+.container main .message_container .edit_comment_form .actions_container .hide_buttons_container,
+.container main .post_comment_container .post_comment_form .actions_container .hide_buttons_container,
+.container main .comments_container .post_comment_form .actions_container .hide_buttons_container,
+.container main .message_container .post_comment_form .actions_container .hide_buttons_container,
+.container main .post_comment_container .edit_message_form .actions_container .hide_buttons_container,
+.container main .comments_container .edit_message_form .actions_container .hide_buttons_container,
+.container main .message_container .edit_message_form .actions_container .hide_buttons_container {
+  visibility: hidden;
+}
+.container main .comments_container {
+  margin-top: 25px;
+}
+.container main .comments_container .buttons_container {
+  text-align: right;
+}
+.container main .comments_container .buttons_container .success_button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 6px;
+}
+.container main .hide_comments_container {
+  display: none;
+}
+.container main .no_messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin-top: 96px;
+}
+.container main .hide_no_messages {
+  display: none;
+}
+.create_message_modal,
+.delete_comment_modal,
+.delete_message_modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+.create_message_modal .modal_container,
+.delete_comment_modal .modal_container,
+.delete_message_modal .modal_container {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  max-width: 540px;
+  min-height: 307px;
+  text-align: center;
+  word-wrap: break-word;
+  padding: 30px 75px 60px 75px;
+}
+.create_message_modal .modal_container .close_button,
+.delete_comment_modal .modal_container .close_button,
+.delete_message_modal .modal_container .close_button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.create_message_modal .modal_container p,
+.delete_comment_modal .modal_container p,
+.delete_message_modal .modal_container p {
+  margin-block: 40px;
+  line-height: normal;
+}
+.create_message_modal .modal_container .buttons_container,
+.delete_comment_modal .modal_container .buttons_container,
+.delete_message_modal .modal_container .buttons_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.create_message_modal .modal_container .buttons_container .cancel_button,
+.delete_comment_modal .modal_container .buttons_container .cancel_button,
+.delete_message_modal .modal_container .buttons_container .cancel_button {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+  padding-left: 50px;
+}
+.create_message_modal .modal_container .buttons_container .success_button,
+.delete_comment_modal .modal_container .buttons_container .success_button,
+.delete_message_modal .modal_container .buttons_container .success_button {
+  background-color: #2c6bff;
+  border: none;
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.create_message_modal .modal_container {
+  padding: 50px;
+  min-width: 937px;
+  min-height: 423px;
+}
+.create_message_modal .modal_container h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.create_message_modal .modal_container #create_message_form textarea {
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  resize: none;
+  border: 1px solid #dce6ff;
+  background-color: #f5f8ff;
+  border-radius: 6px;
+  min-height: 185px;
+  margin-bottom: 30px;
+}
+.create_message_modal .modal_container .buttons_container {
+  justify-content: end;
+}
+.create_message_modal .modal_container .buttons_container .cancel_button {
+  margin-right: 24px;
+}
+.create_message_modal .modal_container .buttons_container .success_button {
+  padding: 10px 40px;
+}
+.show_modal {
+  visibility: visible;
+  opacity: 1;
+}
+.disabled_button {
+  background-color: #2c6bff;
+  opacity: 50%;
+}
+#post_comment_container,
+#message_container {
+  display: none;
+}

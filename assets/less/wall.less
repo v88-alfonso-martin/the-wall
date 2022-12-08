@@ -1,0 +1,268 @@
+@import url("./helper.less");
+
+header {
+    .box_container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 78px;
+    height: 121px;
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        a {
+            margin-left: 16px;
+            color: @font_color;
+            text-decoration: none;
+            font-weight: bold
+        }
+    }
+}
+
+.container {
+
+    main {
+        .box_container;
+        margin: 50px 78px;
+        min-height: 1035px;
+        padding: 58px 68px;
+
+        .main_header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+
+            #messages_length {
+                color: @primary_color;
+                font-weight: bold;
+            }
+
+            #create_message_button {
+                .button;
+                padding: 10px 30px;
+                border-radius: 6px;
+            }
+        }
+        
+        .post_comment_container,
+        .comments_container,
+        .message_container {
+            box-sizing: border-box;
+            border: 1px solid @border_color;
+            border-radius: 6px;
+            min-height: 144px;
+            padding: 30px;
+            margin-bottom: 25px;
+
+            .edit_comment_form,
+            .post_comment_form,
+            .edit_message_form {
+                textarea{
+                    box-sizing: border-box;
+                    border: none;
+                    resize: none;
+                    height: 45px;
+                    width: 100%;
+                    margin-bottom: 15px;
+
+                    &:disabled {
+                        color: @font_color;
+                    }
+                }
+
+                .textarea_edit {
+                    .textarea;
+                    height: 84px;
+                }
+
+               .actions_container {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .message_actions {
+                        list-style: none;
+                        display: flex;
+                        padding-left: 0;
+                        margin: 0;
+
+                        li {
+                            margin-right: 20px;
+                            display: flex;
+                            align-items: center;
+                            cursor: pointer;
+                        }
+
+                        .clicked {
+                            color: @primary_color;
+                        }
+                    }
+
+                    .hide_message_actions {
+                        visibility: hidden;
+                    }
+
+                    .buttons_container {
+                        text-align: right;
+                        
+                        .cancel_button {
+                            text-decoration: none;
+                            color: fade(@black, 60%);
+                            margin-right: 24px;
+                        }
+            
+                        .success_button {
+                            .button;
+                            padding: 10px 30px;
+                            border-radius: 6px;
+                        }
+                    }
+
+                    .hide_buttons_container {
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+
+        .comments_container {
+            margin-top: 25px;
+            
+            .buttons_container {
+                text-align: right;
+
+                .success_button {
+                    .button;
+                    padding: 10px 30px;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .hide_comments_container {
+            display: none;
+        }
+
+        .no_messages {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1;
+            margin-top: 96px;
+        }
+        
+        .hide_no_messages {
+            display: none;
+        }
+    }
+}
+
+.create_message_modal,
+.delete_comment_modal,
+.delete_message_modal {
+    position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+	visibility: hidden;
+
+    .modal_container {
+        .box_container;
+		box-sizing: border-box;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 15px;
+		max-width: 540px;
+		min-height: 307px;
+		text-align: center;
+		word-wrap: break-word;
+        padding: 30px 75px 60px 75px;
+
+        .close_button {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        p {
+            margin-block: 40px;
+            line-height: normal;
+        }
+
+        .buttons_container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;            
+
+            .cancel_button {
+                text-decoration: none;
+                color: fade(@black, 60%);
+                padding-left: 50px
+            }
+
+            .success_button {
+                .button;
+                padding: 15px 40px;
+                border-radius: 6px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.create_message_modal {
+    .modal_container {
+        padding: 50px;
+        min-width: 937px;
+		min-height: 423px;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+
+        #create_message_form {
+            textarea {
+                .textarea;
+                min-height: 185px;
+                margin-bottom: 30px;
+            }
+        }
+    
+        .buttons_container {
+            justify-content: end;
+            
+            .cancel_button {
+                margin-right: 24px;
+            }
+
+            .success_button {
+                padding: 10px 40px;
+            }
+        }
+    }
+}
+
+.show_modal {
+    visibility: visible;
+    opacity: 1;
+}
+
+.disabled_button {
+	background-color: @primary_color;
+	opacity: 50%;
+}
+#post_comment_container,
+#message_container {
+    display: none;
+}
