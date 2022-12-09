@@ -27,6 +27,7 @@ header {
   align-items: center;
   padding-inline: 78px;
   height: 121px;
+  color: #152c61;
 }
 header nav {
   display: flex;
@@ -34,7 +35,7 @@ header nav {
 }
 header nav a {
   margin-left: 16px;
-  color: #152c61;
+  color: #2c6bff;
   text-decoration: none;
   font-weight: bold;
 }
@@ -51,6 +52,9 @@ header nav a {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+}
+.container main .main_header p {
+  color: #707070;
 }
 .container main .main_header #messages_length {
   color: #2c6bff;
@@ -159,6 +163,18 @@ header nav a {
   display: flex;
   align-items: center;
   cursor: pointer;
+  color: #707070;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .message_actions li:last-child span,
+.container main .comments_container .edit_comment_form .actions_container .message_actions li:last-child span,
+.container main .message_container .edit_comment_form .actions_container .message_actions li:last-child span,
+.container main .post_comment_container .post_comment_form .actions_container .message_actions li:last-child span,
+.container main .comments_container .post_comment_form .actions_container .message_actions li:last-child span,
+.container main .message_container .post_comment_form .actions_container .message_actions li:last-child span,
+.container main .post_comment_container .edit_message_form .actions_container .message_actions li:last-child span,
+.container main .comments_container .edit_message_form .actions_container .message_actions li:last-child span,
+.container main .message_container .edit_message_form .actions_container .message_actions li:last-child span {
+  color: #000;
 }
 .container main .post_comment_container .edit_comment_form .actions_container .message_actions .clicked,
 .container main .comments_container .edit_comment_form .actions_container .message_actions .clicked,
@@ -169,6 +185,17 @@ header nav a {
 .container main .post_comment_container .edit_message_form .actions_container .message_actions .clicked,
 .container main .comments_container .edit_message_form .actions_container .message_actions .clicked,
 .container main .message_container .edit_message_form .actions_container .message_actions .clicked {
+  color: #2c6bff;
+}
+.container main .post_comment_container .edit_comment_form .actions_container .message_actions .blue_text,
+.container main .comments_container .edit_comment_form .actions_container .message_actions .blue_text,
+.container main .message_container .edit_comment_form .actions_container .message_actions .blue_text,
+.container main .post_comment_container .post_comment_form .actions_container .message_actions .blue_text,
+.container main .comments_container .post_comment_form .actions_container .message_actions .blue_text,
+.container main .message_container .post_comment_form .actions_container .message_actions .blue_text,
+.container main .post_comment_container .edit_message_form .actions_container .message_actions .blue_text,
+.container main .comments_container .edit_message_form .actions_container .message_actions .blue_text,
+.container main .message_container .edit_message_form .actions_container .message_actions .blue_text {
   color: #2c6bff;
 }
 .container main .post_comment_container .edit_comment_form .actions_container .hide_message_actions,
