@@ -104,6 +104,7 @@ header nav a {
 .container main .comments_container .edit_message_form textarea:disabled,
 .container main .message_container .edit_message_form textarea:disabled {
   color: #152c61;
+  background-color: white;
 }
 .container main .post_comment_container .edit_comment_form .textarea_edit,
 .container main .comments_container .edit_comment_form .textarea_edit,
